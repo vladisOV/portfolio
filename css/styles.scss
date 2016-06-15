@@ -1,0 +1,315 @@
+$blue: #0089cd;
+$gray: #e5e5e5;
+$white: #ffffff;
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: monospace;
+  font-weight: 500;
+  -webkit-animation: badyfade 1s ease;
+  animation: badyfade 1s ease;
+}
+
+strong {
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  z-index: 1;
+  transition: all 0.2s cubic-bezier(0.13, 0.37, 0.24, 1);
+
+  img {
+    height: 60px;
+    padding: 10px;
+  }
+}
+
+.face {
+  height: 150px;
+  margin-bottom: 40px;
+}
+
+section {
+  height: 100%;
+  color: white;
+  position: relative;
+  text-align: center;
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .terminal {
+    border: 2px solid #aaa;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 400px;
+    overflow:hidden
+  }
+}
+
+section#one {
+  background-color: black;
+  margin-bottom: 200px;
+}
+
+section#two {
+  background-color: black;
+  margin-bottom: 200px;
+}
+
+section#three {
+  background-color:  black;
+}
+
+.terminal {
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  font-family: monospace;
+  color: #aaa;
+  background-color: #000;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+.vertical-center {
+  height:100%;
+  width:100%;
+
+  text-align: center;  /* align the inline(-block) elements horizontally */
+  font: 0/0 a;         /* remove the gap between inline(-block) elements */
+}
+
+.vertical-center:before {    /* create a full-height inline block pseudo=element */
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;    /* vertical alignment of the inline element */
+  height: 100%;
+}
+
+.vertical-center > .inner {
+  max-width: 100%;
+
+  display: inline-block;
+  vertical-align: middle;  /* vertical alignment of the inline element */
+  /* reset the font property */
+  font: 16px/1 monospace;
+}
+
+.arrow-down {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 15px;
+  margin-right: 20px;
+  -webkit-transform: rotate(90deg); /* Chrome y Safari */
+  -moz-transform: rotate(90deg); /* Firefox */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); /* Internet Explorer */
+  -o-transform: rotate(90deg); /* Opera */
+}
+
+.blink {
+  animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-ms-keyframes blink {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.prompt, .command {
+  color: #aaa;
+  text-shadow: 0 0 3px gray;
+}
+.cursor {
+  background: gray;
+  animation: blink 1s linear infinite;
+  -webkit-animation: blink 1s infinite linear;
+  -ms-animation: blink 1s infinite linear;
+  -moz-animation: blink 1s infinite linear;
+  -webkit-box-shadow: 0 0 5px gray;
+  -moz-box-shadow: 0 0 5px gray;
+  -ms-box-shadow: 0 0 5px gray;
+  -o-box-shadow: 0 0 5px gray;
+  box-shadow: 0 0 5px gray;
+}
+
+.social {
+  height: 42px;
+  width: 42px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.social:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+.email-form {
+  text-align: left;
+}
+.form-group {
+  padding-bottom: 5px;
+  margin: 0;
+  label {
+    font-size:12px !important;
+    margin: 24px 0 0 0 !important;
+  }
+}
+
+.voffset  {
+  margin-top: 2px;
+}
+.voffset1 { margin-top: 5px; }
+.voffset2 { margin-top: 10px; }
+.voffset3 { margin-top: 15px; }
+.voffset4 { margin-top: 30px; }
+.voffset5 { margin-top: 40px; }
+.voffset6 { margin-top: 60px; }
+.voffset7 { margin-top: 80px; }
+.voffset8 { margin-top: 100px; }
+.voffset9 { margin-top: 150px; }
+
+.email-text {
+  width: 100%;
+  height: 250px;
+  border: 2px solid #aaa;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: black;
+  transition: border 300ms ease-in-out;
+}
+
+.email-text:hover, .email-text:active, .skill:hover, .skill-sec:hover,
+.form-group.is-focused label, .form-group.is-focused label.control-label  {
+  border-color: #21C0CC;
+}
+
+.mleft {
+  margin-left:50px;
+}
+
+.flat-button {
+  position: relative;
+  vertical-align: top;
+  width: 200px;
+  height: 40px;
+  padding: 0;
+  font-size: 15px;
+  color:white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: black;
+  border: 1px solid white;
+  border-radius: 2px;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px white;
+  box-shadow: inset 0 -2px #2f2e2e;
+  transition: border 200ms ease-in-out;
+}
+
+.flat-button:hover {
+  border-color: #21C0CC;
+}
+
+.flat-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.connect-text {
+  font-size: 20px;
+}
+
+div.vertical-line{
+  width: 1px; /* Line width */
+  background-color: white; /* Line color */
+  height: 340px;
+  float: left;
+}
+
+.skill {
+  border: white 1px dashed;
+  border-radius: 7px;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  transition: border 300ms ease-in-out;
+}
+
+.skill-sec {
+  border: white 1px dashed;
+  border-radius: 7px;
+  color: white;
+  padding: 8px;
+  font-size: 15px;
+  transition: border 300ms ease-in-out;
+}
+
+.exp {
+  span {
+    margin-bottom: 5px;
+    display: block;
+  }
+}
+
+.form-group.is-focused .form-control {
+  border: 0;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#21C0CC),to(#21C0CC)),-webkit-gradient(linear,left top,left bottom,from(#D2D2D2),to(#D2D2D2));
+  background-image: -webkit-linear-gradient(#21C0CC,#21C0CC),-webkit-linear-gradient(#D2D2D2,#D2D2D2);
+  background-image: -o-linear-gradient(#21C0CC,#21C0CC),-o-linear-gradient(#D2D2D2,#D2D2D2);
+  background-image: linear-gradient(#21C0CC,#21C0CC),linear-gradient(#D2D2D2,#D2D2D2);
+}
+
+.exp {
+  span {
+    color: gray
+  }
+}
+
+a:hover, a:visited, a:link, a:active{
+  text-decoration: none;
+}

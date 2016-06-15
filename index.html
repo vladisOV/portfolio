@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vladislav Ovcharenko's portfolio</title>
+    <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./node_modules/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script type="text/javascript" src="./node_modules/bootstrap-material-design/dist/js/ripples.min.js"></script>
+    <script type="text/javascript" src="./node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="./node_modules/gsap/src/minified/TweenMax.min.js"></script>
+    <script type="text/javascript" src="./node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="./node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="./node_modules/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap-material-design/dist/css/ripples.min.css">
+    <link rel="stylesheet" type="text/css" href="./node_modules/jquery.terminal/css/jquery.terminal.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <header><a href="/" class="logo">
+        <img src="./img/VO.png"></a>
+    </header>
+    <section class="container-fluid vertical-center" id="one">
+        <div class="inner">
+            <div id="avatar" class="row">
+                <div class="col-md-12">
+                    <img id="vlad" class="face img-circle" src="./img/vlad.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div id="terminal-home" class="terminal" style="height: 200px;"></div>
+                </div>
+            </div>
+            <div class="row">
+                <img src="img/right-black.svg" id="home-arrow" class="arrow-down blink"/>
+            </div>
+        </div>
+    </section>
+    <section id="two" class="container-fluid vertical-center">
+        <div class="inner">
+            <div class="row text-center">
+                <div class="connect-text">
+                    EXPERIENCE
+                </div>
+            </div>
+            <div class="row voffset6">
+                <div id="ivt" class="col-md-4 col-md-offset-2 text-left exp">
+                    <div>
+                        <span><strong>2014 - Nov. 2015</strong></span>
+                        <span>Institute of high technologies of Belgorod State University</span>
+                        <span><strong>Java Software Developer</strong></span>
+                    </div>
+                    <div class="voffset3">
+                        <span>Design and development of automated outdoor lighting management system.</span>
+                        <span>Involved in design and architecture of the application.</span>
+                        <span>Developing web-services.</span>
+                        <span>Involved in unit testing.</span>
+                        <span>Handling documentation for project.</span>
+                    </div>
+                    <div class="voffset3">
+                        <span><strong>Build:</strong> Maven</span>
+                        <span><strong>Technologies:</strong> Spring, Hibernate, GWT</span>
+                        <span><strong>DB:</strong> PostgreSQL</span>
+                        <span><strong>Web-server:</strong> Tomcat</span>
+                        <span><strong>VCS:</strong> SVN, GIT</span>
+                    </div>
+                </div>
+                <div class="vertical-line line-skills" ></div>
+                <div id="hcb" class="col-md-4 text-left exp" style="margin-left: 20px">
+                    <div>
+                        <span><strong>Nov.2015 - Present</strong></span>
+                        <span>Technologies of<br/> reliability</span>
+                        <span><strong>Java Software Developer</strong></span>
+                    </div>
+                    <div class="voffset3">
+                        <span>Software development for financial services & banking.</span>
+                        <span>Construction of the complex web interfaces. </span>
+                        <span>Working with oracle PL/SQL.</span>
+                        <span>Support for existing solutions based on Liferay.</span>
+                    </div>
+                    <div class="voffset3">
+                        <span><strong>Build:</strong> Ant, Maven</span>
+                        <span><strong>Technologies:</strong> Spring, Hibernate, AngularJs</span>
+                        <span><strong>DB:</strong> Oracle</span>
+                        <span><strong>Web-server:</strong> Tomcat</span>
+                        <span><strong>VCS:</strong> SVN, GIT</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center voffset6 line-skills">
+                <div class="connect-text">
+                    SKILLS
+                </div>
+                <div class="col-md-12 voffset5">
+                    <span class="skill">Java</span>
+                    <span class="skill">Javascript</span>
+                    <span class="skill">HTML/CSS</span>
+                    <span class="skill">PL/SQL</span>
+                </div>
+                <div class="col-md-12" style="margin-top: 30px;">
+                    <span class="skill-sec">Spring</span>
+                    <span class="skill-sec">Hibernate</span>
+                    <span class="skill-sec">AngularJs</span>
+                    <span class="skill-sec">GWT</span>
+                    <span class="skill-sec">Mvn/Gradle</span>
+                    <span class="skill-sec">JUnit</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <img src="img/right-black.svg" class="arrow-down blink"/>
+        </div>
+    </section>
+    <section id="three" class="container-fluid vertical-center">
+        <div class="inner">
+            <div class="row text-center">
+                <div class="connect-text">
+                    CONNECT ME
+                </div>
+                <div class="col-md-12 voffset5">
+                    <img src="img/telephone-auricular-with-cable.svg"
+                         onmouseover="this.src='img/phone-colored.svg';"
+                         onmouseout="this.src='img/telephone-auricular-with-cable.svg';"
+                         class="social" />
+                    <a href="http://www.instagram.com/vladlen_ov">
+                        <img src="img/instagram.svg"
+                             onmouseover="this.src='img/instagram-colored.svg';"
+                             onmouseout="this.src='img/instagram.svg';"
+                             class="social" />
+                    </a>
+                    <a href="http://www.linkedin.com/in/vladisov">
+                        <img src="img/linkedin.svg"
+                             onmouseover="this.src='img/linkedin-colored.svg';"
+                             onmouseout="this.src='img/linkedin.svg';"
+                             class="social" />
+                    </a>
+                    <a href="http://github.com/vladisov">
+                        <img src="img/github-social-logo.svg"
+                             onmouseover="this.src='img/github-colored.svg';"
+                             onmouseout="this.src='img/github-social-logo.svg';"
+                             class="social"/>
+                    </a>
+                    <a href="skype:ovcharenko.va?chat">
+                        <img src="img/skype.svg"
+                             onmouseover="this.src='img/skype-colored.svg';"
+                             onmouseout="this.src='img/skype.svg';"
+                             class="social" />
+                    </a>
+                </div>
+            </div>
+            <div class="row email-form voffset6">
+                <form action="MAILTO:vlad079@ya.ru" method="post" enctype="text/plain">
+                    <div class="col-md-3 col-md-offset-2 voffset3">
+                        <div class="form-group label-floating is-empty">
+                            <label for="name" class="control-label">Name</label>
+                            <input type="text" name="name" class="form-control" id="name">
+                        </div>
+                        <div class="form-group label-floating is-empty">
+                            <label for="email" class="control-label">Email</label>
+                            <input type="email" name="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group label-floating is-empty">
+                            <label for="phone" class="control-label">Phone</label>
+                            <input type="tel" name="phone" class="form-control" id="phone">
+                        </div>
+                        <div class="voffset5 text-center">
+                            <input type="submit"  value="SUBMIT" class="flat-button">
+                        </div>
+                    </div>
+                    <div class="col-md-5 mleft">
+                        <label for="text" class="control-label">Message</label>
+                        <textarea id="text" name="message" class="email-text voffset1"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

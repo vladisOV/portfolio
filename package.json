@@ -1,0 +1,18 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "my resume",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vladislav Ovcharenko",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "bootstrap-material-design": "^0.5.10",
+    "gsap": "^1.18.5",
+    "jquery.terminal": "^0.10.11",
+    "scrollmagic": "^2.0.5"
+  }
+}
